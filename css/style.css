@@ -600,3 +600,17 @@ html.is-loading, html.is-loading body{overflow:hidden;height:100%;}
   .nav{padding-left:max(5vw, env(safe-area-inset-left));padding-right:max(5vw, env(safe-area-inset-right));}
   .footer{padding-bottom:env(safe-area-inset-bottom);}
 }
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+  .scroll-cue span{animation:none;}
+  .loader-dots{animation:none;opacity:1;}
+  /* keep the title/frames readable without the reveal animation */
+  .hero-title .char{opacity:1 !important;transform:none !important;}
+}

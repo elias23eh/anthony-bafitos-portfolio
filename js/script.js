@@ -31,10 +31,11 @@ window.addEventListener("resize", setVhVar);
 window.addEventListener("orientationchange", setVhVar);
 
 /* ---------------- Lenis smooth scroll ---------------- */
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const lenis = new Lenis({
-  duration: 1.15,
+  duration: prefersReducedMotion ? 0 : 1.15,
   easing: (t) => Math.min(1, 1 - Math.pow(2, -10 * t)),
-  smoothWheel: true,
+  smoothWheel: !prefersReducedMotion, // fall back to native scroll when reduced motion is requested
   smoothTouch: false, // native touch scroll on mobile — smoother than simulated
 });
 function raf(time) {
