@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Anthony Bafitos — Procurement Manager</title>
+<meta name="description" content="Anthony Bafitos — Procurement Manager. Sourcing smarter, negotiating harder, delivering value across global supply chains.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <svg class="loader-route" viewBox="0 0 300 100" fill="none">
+      <path class="loader-route-track" d="M20,78 Q150,10 280,78" stroke-width="1.5"/>
+      <path class="loader-route-line" id="loaderRouteLine" d="M20,78 Q150,10 280,78" stroke-width="1.5"/>
+      <circle class="loader-node" id="loaderNode0" cx="20" cy="78" r="4"/>
+      <circle class="loader-node" id="loaderNode1" cx="150" cy="27" r="4"/>
+      <circle class="loader-node" id="loaderNode2" cx="280" cy="78" r="4"/>
+    </svg>
+    <div class="loader-meta">
+      <span class="loader-label">Sourcing<span class="loader-dots">...</span></span>
+      <span class="loader-pct" id="loaderPct">0%</span>
+    </div>
+  </div>
+</div>
+
+<div class="grain"></div>
+
+<div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
+
+<nav class="nav">
+  <span class="nav-mark">AB</span>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#pillars">Expertise</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-sticky">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-vignette"></div>
+    <div class="hero-copy">
+      <h1 class="hero-title" id="heroTitle" aria-label="Anthony Bafitos">
+        <span class="line" data-line="1">ANTHONY</span>
+        <span class="line" data-line="2">BAFITOS</span>
+      </h1>
+      <p class="hero-subtitle">Procurement Manager — sourcing smarter, negotiating harder, delivering value across global supply chains.</p>
+    </div>
+    <div class="scroll-cue"><span></span>Scroll</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="stats-grid">
+    <div class="stat" data-target="250" data-suffix="+">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Suppliers Managed</span>
+    </div>
+    <div class="stat" data-target="18" data-suffix="">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Countries Sourced From</span>
+    </div>
+    <div class="stat" data-target="23" data-suffix="%">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Avg. Cost Savings</span>
+    </div>
+    <div class="stat" data-target="400" data-suffix="+">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Contracts Negotiated</span>
+    </div>
+    <div class="stat" data-target="12" data-suffix="+">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+  </div>
+</section>
+
+<!-- THREE PILLARS -->
+<section class="pillars" id="pillars">
+  <div class="pillars-sticky">
+    <canvas class="pillars-video" id="pillarsCanvas"></canvas>
+    <div class="pillars-fallback"></div>
+    <div class="pillars-overlay"></div>
+    <div class="pillars-copy">
+      <span class="pillars-kicker">What I Do</span>
+      <div class="pillar" data-pillar="1">
+        <span class="pillar-index">01</span>
+        <h2>Strategic Sourcing</h2>
+        <p>Identifying and qualifying the right suppliers, worldwide — built on data, not guesswork.</p>
+      </div>
+      <div class="pillar" data-pillar="2">
+        <span class="pillar-index">02</span>
+        <h2>Supplier Negotiation &amp; Relationship Management</h2>
+        <p>Turning vendors into long-term partners while protecting margin on every deal.</p>
+      </div>
+      <div class="pillar" data-pillar="3">
+        <span class="pillar-index">03</span>
+        <h2>Global Supply Chain Optimization</h2>
+        <p>Re-engineering the flow of goods for speed, resilience, and lower landed cost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="work-head">
+    <span class="section-kicker">Selected Work</span>
+    <h2>Recent Engagements</h2>
+  </div>
+  <div class="work-grid">
+    <article class="work-card">
+      <div class="work-card-num">01</div>
+      <h3>Global Electronics Sourcing Overhaul</h3>
+      <p>Rebuilt a fragmented supplier base into a consolidated network across 6 countries, cutting lead time by a third.</p>
+      <span class="work-tag">Strategic Sourcing</span>
+    </article>
+    <article class="work-card">
+      <div class="work-card-num">02</div>
+      <h3>Supplier Consolidation Initiative</h3>
+      <p>Negotiated master agreements across 40+ vendors, unlocking volume leverage and simplifying procurement ops.</p>
+      <span class="work-tag">Negotiation</span>
+    </article>
+    <article class="work-card">
+      <div class="work-card-num">03</div>
+      <h3>APAC Cost Reduction Program</h3>
+      <p>Re-mapped a regional supply chain end-to-end, delivering double-digit cost savings within two quarters.</p>
+      <span class="work-tag">Supply Chain</span>
+    </article>
+  </div>
+</section>
+
+<!-- CREDENTIAL -->
+<section class="credential" id="credential">
+  <div class="credential-inner">
+    <div class="credential-copy">
+      <span class="section-kicker">Credentials</span>
+      <h2>Summer Internship —<br>Masterpak, INDEVCO Group</h2>
+      <p class="credential-desc">Completed a hands-on internship in the Purchasing department, gaining first-hand exposure to sourcing operations within one of the region's largest industrial groups.</p>
+      <ul class="credential-facts">
+        <li><span>Company</span>Masterpak — member of INDEVCO Group</li>
+        <li><span>Department</span>Purchasing</li>
+        <li><span>Duration</span>26 May 2025 – 22 June 2025</li>
+        <li><span>Hours</span>360 hours completed</li>
+      </ul>
+    </div>
+    <button class="credential-frame" id="credentialFrame" aria-label="View certificate full size">
+      <img src="assets/certificates/indevco-internship.jpg" alt="INDEVCO Certificate of Internship — Anthony Bafitos, Masterpak Purchasing Department">
+      <span class="credential-frame-hint">View Certificate</span>
+    </button>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img src="assets/certificates/indevco-internship.jpg" alt="INDEVCO Certificate of Internship — Anthony Bafitos, Masterpak Purchasing Department">
+</div>
+
+<!-- FINALE / CTA -->
+<section class="finale" id="contact">
+  <div class="finale-inner">
+    <h2 class="finale-title">Let's optimize your<br>supply chain.</h2>
+    <div class="finale-actions">
+      <a href="mailto:hello@anthonybafitos.com" class="btn btn-primary">Get in Touch</a>
+      <a href="#" class="btn btn-ghost">Download Résumé</a>
+    </div>
+  </div>
+  <footer class="footer">
+    <span>© <span id="year"></span> Anthony Bafitos</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/anthonybafitos" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hello@anthonybafitos.com">Email</a>
+    </div>
+  </footer>
+</section>
+
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
